@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - UserControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>UserControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/coe.bananagrams.controller.html">coe.bananagrams.controller</a> &gt; UserControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.721s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">delete_WhenUserExists_ReturnsOk()</td>
+<td class="success">0.721s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>16:09:57.268 [Test worker] DEBUG org.jboss.logging -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+16:09:57.271 [Test worker] INFO org.hibernate.validator.internal.util.Version -- HV000001: Hibernate Validator 8.0.0.Final
+16:09:57.284 [Test worker] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator -- Loaded expression factory via original TCCL
+16:09:57.284 [Test worker] DEBUG org.hibernate.validator.internal.engine.AbstractConfigurationImpl -- Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+16:09:57.286 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser -- Trying to load META-INF/validation.xml for XML based Validator configuration.
+16:09:57.287 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper -- Trying to load META-INF/validation.xml via TCCL
+16:09:57.288 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper -- Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+16:09:57.288 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser -- No META-INF/validation.xml found. Using annotation based configuration only.
+16:09:57.291 [Test worker] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers -- Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+16:09:57.292 [Test worker] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers -- Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+16:09:57.327 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper -- HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+16:09:57.329 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper -- HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+16:09:57.330 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper -- HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+16:09:57.330 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper -- HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+16:09:57.330 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper -- HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+16:09:57.330 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper -- HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+16:09:57.384 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings -- 
+	c.b.c.UsersController:
+	{PUT [/users/{id}], consumes [application/json], produces [application/json]}: update(int,UpdateUserViewModel)
+	{DELETE [/users/{id}], produces [application/json]}: delete(int)
+	{POST [/users], consumes [application/json], produces [application/json]}: create(CreateUserViewModel)
+	{GET [/users], produces [application/json]}: findAll()
+	{GET [/users/{id}], produces [application/json]}: getById(int)
+16:09:57.390 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -- 5 mappings in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
+16:09:57.497 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+16:09:57.510 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -- ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+16:09:57.520 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+16:09:57.520 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+16:09:57.521 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet -- Detected AcceptHeaderLocaleResolver
+16:09:57.521 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet -- Detected FixedThemeResolver
+16:09:57.521 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet -- Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@79e7188e
+16:09:57.522 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet -- Detected org.springframework.web.servlet.support.SessionFlashMapManager@773014d3
+16:09:57.522 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet -- enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+16:09:57.522 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 2 ms
+16:09:57.538 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet -- DELETE &quot;/users/1&quot;, parameters={}
+16:09:57.545 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -- Mapped to coe.bananagrams.controller.UsersController#delete(int)
+16:09:57.565 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor -- Using 'application/json', given [*/*] and supported [application/json]
+16:09:57.575 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor -- Nothing to write: null body
+16:09:57.576 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet -- Completed 200 OK
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6.1</a> at 23 May 2023, 16:09:57</p>
+</div>
+</div>
+</body>
+</html>

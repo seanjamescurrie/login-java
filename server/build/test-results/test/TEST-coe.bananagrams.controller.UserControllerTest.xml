@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="coe.bananagrams.controller.UserControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-05-23T15:09:56" hostname="BEL-MC-221217A.local" time="0.721">
+  <properties/>
+  <testcase name="delete_WhenUserExists_ReturnsOk()" classname="coe.bananagrams.controller.UserControllerTest" time="0.721"/>
+  <system-out><![CDATA[16:09:57.268 [Test worker] DEBUG org.jboss.logging -- Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+16:09:57.271 [Test worker] INFO org.hibernate.validator.internal.util.Version -- HV000001: Hibernate Validator 8.0.0.Final
+16:09:57.284 [Test worker] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator -- Loaded expression factory via original TCCL
+16:09:57.284 [Test worker] DEBUG org.hibernate.validator.internal.engine.AbstractConfigurationImpl -- Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+16:09:57.286 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser -- Trying to load META-INF/validation.xml for XML based Validator configuration.
+16:09:57.287 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper -- Trying to load META-INF/validation.xml via TCCL
+16:09:57.288 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper -- Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+16:09:57.288 [Test worker] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser -- No META-INF/validation.xml found. Using annotation based configuration only.
+16:09:57.291 [Test worker] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers -- Found jakarta.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+16:09:57.292 [Test worker] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers -- Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+16:09:57.327 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper -- HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+16:09:57.329 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper -- HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+16:09:57.330 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper -- HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+16:09:57.330 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper -- HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+16:09:57.330 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper -- HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+16:09:57.330 [Test worker] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper -- HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+16:09:57.384 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings -- 
+	c.b.c.UsersController:
+	{PUT [/users/{id}], consumes [application/json], produces [application/json]}: update(int,UpdateUserViewModel)
+	{DELETE [/users/{id}], produces [application/json]}: delete(int)
+	{POST [/users], consumes [application/json], produces [application/json]}: create(CreateUserViewModel)
+	{GET [/users], produces [application/json]}: findAll()
+	{GET [/users/{id}], produces [application/json]}: getById(int)
+16:09:57.390 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -- 5 mappings in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
+16:09:57.497 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter -- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+16:09:57.510 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver -- ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+16:09:57.520 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+16:09:57.520 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+16:09:57.521 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet -- Detected AcceptHeaderLocaleResolver
+16:09:57.521 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet -- Detected FixedThemeResolver
+16:09:57.521 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet -- Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@79e7188e
+16:09:57.522 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet -- Detected org.springframework.web.servlet.support.SessionFlashMapManager@773014d3
+16:09:57.522 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet -- enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+16:09:57.522 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 2 ms
+16:09:57.538 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet -- DELETE "/users/1", parameters={}
+16:09:57.545 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping -- Mapped to coe.bananagrams.controller.UsersController#delete(int)
+16:09:57.565 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor -- Using 'application/json', given [*/*] and supported [application/json]
+16:09:57.575 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor -- Nothing to write: null body
+16:09:57.576 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet -- Completed 200 OK
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
